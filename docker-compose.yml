@@ -1,0 +1,23 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: next-app
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    env_file:
+      - .env
+    depends_on:
+      - db
+    entrypoint: [ "sh", "/app/entrypoint.sh" ]
+  db:
+    image: postgres:15-alpine
+    container_name: db-1
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=postgres

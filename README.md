@@ -1,2 +1,3 @@
-# Dota2Hero
-Assignment test SmartSoft Asia
+admin 
+user: smartsoftAsia
+password: dota2

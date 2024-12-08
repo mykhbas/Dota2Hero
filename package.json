@@ -1,0 +1,25 @@
+{
+  "name": "dota2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.19.0",
+    "next": "^14.2.13",
+    "next-images": "^1.8.5",
+    "js-cookie": "^3.0.1",
+    "prisma": "^6.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "uuid": "^9.0.1",
+    "sweetalert2": "^11.6.13"
+  },
+  "devDependencies": {
+    "prisma": "^5.19.0"
+  }
+}

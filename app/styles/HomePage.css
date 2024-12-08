@@ -1,0 +1,24 @@
+body{
+    background-image: url('../public/images/strat.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    justify-content:center;
+    /* align-items:end; */
+    height: 100vh;
+    display: flex;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.button {
+    cursor:pointer;
+    border-radius: 6px;
+    width: 200px;
+    height: 50px;
+    margin-top :70vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}

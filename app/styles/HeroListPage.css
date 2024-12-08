@@ -1,0 +1,247 @@
+.containerShow {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center;  */
+  flex-direction: row;
+  /* text-align: center; */
+  /* align-items: center; */
+}
+#heroListBox{
+  color: white;
+}
+.mainContainer{
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:2%;
+  min-width: 890px;
+
+}
+.searchBox {
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+  padding: 20px; 
+  background-color: rgb(213, 213, 213,0.7);
+  border: 1px solid black;
+}
+#headBox {
+  /* background-image:  */
+    /* linear-gradient(rgba(118, 10, 10, 0.8), rgba(118, 10, 10, 0.8)) */
+    /* url("https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/icons/facets/ripple_texture.png"); */
+    background-image: url('../public/images/wallpaper.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    border-bottom-left-radius:0; 
+    border-top-left-radius:20px; 
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 0; 
+    min-width: 890px;
+    color : #EE0000;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+#myFavorite{
+  color:white;
+  width: 150px;
+  height: 50px;
+  margin-left: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: #B22222;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.heroList {
+  flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  flex: 0 0 60%
+}
+
+.heroCard {
+  list-style: none;
+  position: relative;
+  margin: 10px;
+  text-align: center;
+  width: 150px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.heroCard:hover {
+  transform: scale(1.2); 
+}
+
+.heroCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: opacity 0.3s ease;
+}
+
+.heroCard p {
+  position: absolute;
+  bottom: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 5px;
+  display: none; 
+}
+.heroCard p:first-of-type {
+  bottom: 10px;
+}
+.heroCard p:nth-of-type(2) {
+  bottom: 40px;  
+}
+.heroCard p:nth-of-type(3) { 
+  position: absolute;
+  bottom: 100px; 
+  left: 0; 
+}
+.heroCard p:nth-of-type(4) {
+  position: absolute;
+  bottom: -20px;
+  left: 65%;
+  display:block;
+  font-size:30px;
+  background: none;
+}
+.heroCard:hover p{
+  display:block;
+}
+
+#favoriteBox {
+  background: linear-gradient(to bottom,rgb(70, 70, 70), rgb(120, 120, 120));
+  /* background: linear-gradient(to bottom,rgb(43, 43, 43), rgb(82, 82, 82)); */
+  border: 1px solid #333;
+  width:400px;
+  flex: 0 0 20%;
+  color:white;
+}
+
+#filterBox {
+  background: linear-gradient(to bottom,rgb(70, 70, 70), rgb(120, 120, 120));
+  /* background: linear-gradient(to bottom,rgb(43, 43, 43), rgb(82, 82, 82)); */
+  border: 1px solid #333;
+  width:400px;
+  flex:0 0 20%;
+  color:white;
+}
+.searchBox {
+  display: flex;
+  justify-content: center;
+  padding:10px;
+  border-radius: 5px;
+  color: black;
+}
+.tab{
+  cursor:pointer;
+  width:50px;
+  height : 50px;
+}
+.tab.hover{
+  opacity:1.0;
+}
+.tabdark{
+  filter:brightness(0.7);
+  width:60px;
+  height: 60px;
+  -webkit-filter:brightness(0.7);
+}
+.insideFilterBox{
+  font-size:20px;
+  align-items: center;
+  padding:20px;
+  margin:20px;
+  color:white;
+}
+#insideFavoriteBox{
+  align-items: center;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+}
+#textFilter{
+  font-size:35px;
+  font-weight :bold;
+}
+#textFavorite{
+  font-size:35px;
+  font-weight :bold;
+}
+.typeImg{
+  width:20px;
+  height:20px;
+}
+
+body {
+  background-image: url("https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/backgrounds/greyfade.jpg");
+  background-size: cover; 
+}
+
+
+.heroCardTop{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  background-color:  rgb(213, 213, 213,0.7);
+  width: 200px;
+  border-radius: 10px;
+  margin:20px ;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.heroCardTop img {
+  width: 100px;
+  object-fit: cover; 
+  cursor: pointer;
+}
+.top10DetailBox{
+  color: rgb(0, 0, 0);
+  margin: 10px;
+}
+#adminButton{
+  border-top:1px solid #333;
+}
+.adminOptionBox{
+  color:black;
+  margin-top:20px;
+  margin-left:20px;
+  margin-right:20px;
+  background-color:#EEAD0E;
+  padding:10px;
+  border-radius:5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.adminLogin{
+  margin-top:10px;
+  display:flex;
+  flex-direction:column;
+}
+#loginButton{
+  margin-top :5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+.option{
+  border-top:1px solid #333;
+}
