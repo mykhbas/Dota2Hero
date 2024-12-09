@@ -1,10 +1,7 @@
 .containerShow {
   display: flex;
   justify-content: space-between;
-  /* justify-content: center;  */
   flex-direction: row;
-  /* text-align: center; */
-  /* align-items: center; */
 }
 #heroListBox{
   color: white;
@@ -16,6 +13,7 @@
   margin-right:10%;
   margin-top:2%;
   min-width: 890px;
+  box-shadow: 0 16px 32px rgba(255, 50, 50, 0.5);
 
 }
 
