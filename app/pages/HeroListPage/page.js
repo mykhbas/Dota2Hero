@@ -212,7 +212,6 @@ export default function HeroesList(){
             <input type="checkbox" id="role" name="role" onChange={() => RoleChangeFunction("Pusher")} />
             <label>Pusher</label>
           </div>
-          {role}
         </div>
         <div className="primaryAttr">
           <p >Primary Attribute</p>
