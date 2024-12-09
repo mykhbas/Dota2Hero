@@ -82,13 +82,17 @@ body {
     margin:10px;
 }
 .mainBox{
+    background-image: url('../public/images/wallpaper5.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 0 auto; 
-    background-color: rgb(113, 113, 113,0.8);
+    /* background-color: rgb(113, 113, 113,0.8); */
     border-radius: 20px;
     width: 1000px; 
     padding: 20px; 
