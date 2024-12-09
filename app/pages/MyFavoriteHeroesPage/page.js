@@ -23,6 +23,14 @@ import Swal from 'sweetalert2';
 // เมื่อกดปุ่มยกเลิกการชอบ
 import {unFavorite} from './unFavorite';
 
+import '../../styles/filterBox.css';
+import '../../styles/favoriteBox.css';
+import '../../styles/searchBox.css';
+import '../../styles/headBox.css';
+
+
+
+
 
 
 export default function HeroesList(){

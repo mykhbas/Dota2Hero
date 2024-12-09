@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation'; 
-import '../../styles/HeroListPage.css';
 // function ของการเข้าสู่ระบบแอดมิน
 import {login} from './loginAdmin';
 import { getUserRole } from './getUserRole';
@@ -20,6 +19,12 @@ import {RoleChange} from './RoleChange';
 import {fetchGetData} from './fetchGetData';
 import Cookies from 'js-cookie';
 import Swal from 'sweetalert2';
+
+import '../../styles/filterBox.css';
+import '../../styles/favoriteBox.css';
+import '../../styles/searchBox.css';
+import '../../styles/HeroListPage.css';
+import '../../styles/headBox.css';
 
 export default function HeroesList(){
   const router = useRouter(); 
